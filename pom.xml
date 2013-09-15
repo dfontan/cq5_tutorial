@@ -11,6 +11,7 @@
 
     <modules>
         <module>cq_deployment_war</module>
+        <module>global-cq-content</module>
     </modules>
 
 
