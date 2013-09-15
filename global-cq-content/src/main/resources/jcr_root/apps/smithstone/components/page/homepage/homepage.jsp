@@ -1,5 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
-<%@taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0" %> <!-- <1> -->
+<%@taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
@@ -16,7 +16,8 @@
 
 
 <head>
-    <cq:include script="/libs/wcm/core/components/init/init.jsp" /> <!-- <2> -->
+    <title><%= currentPage.getTitle() == null ? "No Title" : currentPage.getTitle() %></title> <!-- <1> -->
+    <cq:include script="/libs/wcm/core/components/init/init.jsp" />
 </head>
 
 <body>
