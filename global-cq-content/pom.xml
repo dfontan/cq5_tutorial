@@ -17,13 +17,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>jstl</groupId>
+            <groupId>jstl</groupId>                                 <!-- <1> -->
             <artifactId>jstl</artifactId>
             <version>1.2</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>com.day.cq.wcm</groupId>
+            <groupId>com.day.cq.wcm</groupId>                       <!-- <2> -->
             <artifactId>cq-wcm-taglib</artifactId>
             <version>5.5.0</version>
             <scope>runtime</scope>
@@ -38,7 +38,7 @@
         </resources>
         <plugins>
             <plugin>
-                <groupId>org.apache.sling</groupId>
+                <groupId>org.apache.sling</groupId>                 <!-- <3> -->
                 <artifactId>maven-sling-plugin</artifactId>
                 <version>2.0.6</version>
                 <configuration>
@@ -46,14 +46,13 @@
                 </configuration>
             </plugin>
             <plugin>
-
-                <groupId>com.cognifide.maven.plugins</groupId>
+                <groupId>com.cognifide.maven.plugins</groupId>      <!-- <4> -->
                 <artifactId>maven-crx-plugin</artifactId>
                 <version>1.0.3</version>
                 <configuration>
-                    <url>http://localhost:4502</url>
-                    <user>admin</user>
-                    <password>admin</password>
+                    <url>http://localhost:4502</url>                <!-- <5> -->
+                    <user>admin</user>                              <!-- <6> -->
+                    <password>admin</password>                      <!-- <7> -->
                 </configuration>
             </plugin>
         </plugins>
@@ -63,7 +62,7 @@
         <profile>
             <id>local</id>
             <properties>
-                <sling.username>admin</sling.username>
+                <sling.username>admin</sling.username>          <!-- <8> -->
                 <sling.password>admin</sling.password>
                 <sling.url>http://localhost:4502/system/console/bundles</sling.url>
             </properties>
@@ -88,7 +87,7 @@
 
             <repositories>
                 <repository>
-                    <id>adobe-public</id>
+                    <id>adobe-public</id>                       <!-- <9> -->
                     <url>http://repo.adobe.com/nexus/content/groups/public</url>
                     <releases>
                         <enabled>true</enabled>
