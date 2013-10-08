@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/smithstone/components/pages"/>
+    <filter root="/apps/smithstone/templates"/>
+    <filter root="/etc/designs/smithstone"/>
+    <filter root="/etc/blueprints/smithstone"/>
+</workspaceFilter>
