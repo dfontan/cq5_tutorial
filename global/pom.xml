@@ -12,6 +12,6 @@
 
     <modules>
         <module>global-domain</module>
-        
+        <module>global-cq-domain</module>
     </modules>
 </project>
