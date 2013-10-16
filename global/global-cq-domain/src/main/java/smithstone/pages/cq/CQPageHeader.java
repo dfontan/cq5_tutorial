@@ -14,7 +14,6 @@ public class CQPageHeader implements PageHeader {
 
     @Override
     public String getTitle() {
-        String title = currentPage == null ? DEFAULT_TITLE : currentPage.getTitle();
-        return title == null ? PageHeader.DEFAULT_TITLE : title;
+        return currentPage == null ? DEFAULT_TITLE : currentPage.getTitle() == null ? DEFAULT_TITLE : currentPage.getTitle();
     }
 }
