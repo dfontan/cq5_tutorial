@@ -13,5 +13,6 @@
     <modules>
         <module>global-domain</module>
         <module>global-cq-domain</module>
+        <module>global-views</module>
     </modules>
 </project>

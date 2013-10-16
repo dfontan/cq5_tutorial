@@ -1,10 +1,10 @@
 package smithstone.pages.cq;
 
 import com.day.cq.wcm.api.Page;
-import smithstone.pages.PageHeader;
+import smithstone.pages.TitleProvider;
 
 
-public class CQPageHeader implements PageHeader {
+public class CQPageTitle implements TitleProvider {
 
     private Page currentPage;
 

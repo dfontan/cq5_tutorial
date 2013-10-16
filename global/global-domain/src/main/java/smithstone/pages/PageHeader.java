@@ -1,7 +1,26 @@
 package smithstone.pages;
 
-public interface PageHeader {
-    String DEFAULT_TITLE = "-";
+public class PageHeader {
 
-    String getTitle();
+
+    public TitleProvider titleProvider;
+
+    public PageHeader(TitleProvider titleProvider) {
+        this.titleProvider = titleProvider;
+    }
+
+    public PageHeader() {
+        titleProvider = new TitleProvider.NullTitleProvider();
+    }
+
+
+    public void setTitleProvider(TitleProvider titleProvider) {
+        this.titleProvider = titleProvider;
+    }
+
+    public String getTitle(){
+        return titleProvider.getTitle();
+    }
+
 }
+
