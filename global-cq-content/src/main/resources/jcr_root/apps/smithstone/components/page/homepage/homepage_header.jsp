@@ -3,7 +3,7 @@
 
 <smithstone:pageHeaderFactory out="pageHeader"/>
 
-<jsp:useBean id="pageHeader" type="smithstone.pages.PageHeader" scope="request"/>   <!-- <5> -->
+<jsp:useBean id="pageHeader" type="smithstone.pages.PageHeader" scope="request"/>   <!-- <1> -->
 
-<title><c:out value="${pageHeader.title}"/> </title>                                <!-- <6> -->
+<title><c:out value="${pageHeader.title}"/> </title>                                <!-- <2> -->
 

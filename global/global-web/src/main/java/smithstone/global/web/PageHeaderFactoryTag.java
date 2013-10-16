@@ -1,4 +1,7 @@
-package smithstone.pages;
+package smithstone.global.web;
+
+import smithstone.pages.PageHeader;
+import smithstone.pages.TitleProvider;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;

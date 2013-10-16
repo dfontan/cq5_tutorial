@@ -10,7 +10,7 @@
     <uri>http://smithstone.co.uk/global</uri>
     <tag>
         <name>pageHeaderFactory</name>
-        <tag-class>smithstone.pages.PageHeaderFactoryTag</tag-class>
+        <tag-class>smithstone.global.web.PageHeaderFactoryTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <name>out</name>

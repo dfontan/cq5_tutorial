@@ -3,6 +3,7 @@ package smithstone.pages;
 import org.junit.Test;
 import org.mockito.Mockito;
 import org.springframework.mock.web.MockPageContext;
+import smithstone.global.web.PageHeaderFactoryTag;
 
 import javax.servlet.ServletRequest;
 
