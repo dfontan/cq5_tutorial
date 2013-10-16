@@ -18,7 +18,7 @@
     <cq:include script="/libs/wcm/core/components/init/init.jsp" />
 
     <jsp:useBean id="titleProvider" class="smithstone.pages.cq.CQPageTitle" scope="request"/>       <!-- <1> -->
-    <jsp:setProperty name="titleProvider" property="cqPage" value="${currentPage}"/>                   <!-- <2> -->
+    <jsp:setProperty name="titleProvider" property="cqPage" value="${currentPage}"/>                <!-- <2> -->
 
     <cq:include script="homepage_header.jsp"/>                                                      <!-- <3> -->
 
