@@ -9,10 +9,6 @@ public class PageHeader {
         this.titleProvider = titleProvider;
     }
 
-    public PageHeader() {
-        titleProvider = new TitleProvider.NullTitleProvider();
-    }
-
 
     public void setTitleProvider(TitleProvider titleProvider) {
         this.titleProvider = titleProvider;

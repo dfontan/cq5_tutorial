@@ -15,9 +15,8 @@ public class PageHeaderFactoryTag extends SimpleTagSupport {
     @Override
     public void doTag() throws JspException, IOException {
 
-        TitleProvider titleProvider = (TitleProvider)getJspContext().findAttribute("titleProvider");
-
-        PageHeader header = new PageHeader(titleProvider);
+        TitleProvider titleProvider = (TitleProvider) getJspContext().findAttribute("titleProvider");
+        PageHeader header = new PageHeader(titleProvider != null ? titleProvider : new TitleProvider.NullTitleProvider());
 
         getJspContext().setAttribute(getOut(), header, PageContext.REQUEST_SCOPE);
 

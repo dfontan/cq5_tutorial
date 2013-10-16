@@ -14,6 +14,25 @@ public class PageHeaderFactoryTagTest {
 
 
     @Test
+    public void ifNoTitleProviderProvidedInScopeUseDefault() throws Exception {
+
+        String MOCK_TITLE = "TITLE HERE";
+
+        MockPageContext pageContext = new MockPageContext();
+
+        PageHeaderFactoryTag tag = new PageHeaderFactoryTag();
+
+        tag.setOut("pageHeader");
+        tag.setJspContext(pageContext);
+        tag.doTag();
+
+        ServletRequest request = pageContext.getRequest();
+
+        PageHeader header = (PageHeader) request.getAttribute("pageHeader");
+        assertThat(header.getTitle(), equalTo(TitleProvider.DEFAULT_TITLE));
+    }
+
+    @Test
     public void pageHeaderExistsOnPageContext() throws Exception {
 
         String MOCK_TITLE = "TITLE HERE";
