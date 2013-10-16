@@ -4,9 +4,7 @@
 <html>
 <head>
 
-    <jsp:useBean id="titleProvider" class="smithstone.pages.FakeTitleProvider"/>
-
-    <smithstone:pageHeaderFactory out="pageHeader"/>
+    <jsp:useBean id="titleProvider" class="smithstone.pages.FakeTitleProvider" scope="request"/>
 
     <jsp:include page="/apps/smithstone/components/page/homepage/homepage_header.jsp"/>
 
