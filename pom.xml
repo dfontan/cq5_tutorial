@@ -12,6 +12,7 @@
     <modules>
         <module>cq_deployment_war</module>
         <module>global-cq-content</module>
+        <module>cq5-test-unit</module>
     </modules>
 
 
