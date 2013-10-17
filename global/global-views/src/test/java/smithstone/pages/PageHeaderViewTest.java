@@ -12,7 +12,8 @@ public class PageHeaderViewTest {
 
     @Test
     public void pageHasProviderTitle() throws Exception {
-        Document document = Jsoup.connect("http://localhost:9999/global-cq-view-tests/fixtures/header_test.jsp").get();
+        Document document = Jsoup.connect("http://localhost:9999/global-cq-view-tests/fixtures/header_test.jsp")
+                .get();
         assertThat(document.title(), equalTo(FakeTitleProvider.TITLE));
     }
 }
