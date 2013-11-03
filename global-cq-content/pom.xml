@@ -28,6 +28,23 @@
             <version>5.5.0</version>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>global</groupId>
+            <artifactId>global-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>global</groupId>
+            <artifactId>global-cq-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>global</groupId>
+            <artifactId>global-web</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

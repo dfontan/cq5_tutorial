@@ -14,13 +14,14 @@
 <!--[if gt IE 9]>  <html lang=""> <![endif]-->
 <!--[if !IE]><!--> <html lang=""><!--<![endif]-->
 
-
 <head>
-    <title><%= currentPage.getTitle() == null ? "No Title" : currentPage.getTitle() %></title> <!-- <1> -->
     <cq:include script="/libs/wcm/core/components/init/init.jsp" />
+
+    <jsp:useBean id="titleProvider" class="smithstone.pages.cq.CQPageTitle" scope="request"/>       <!-- <1> -->
+    <jsp:setProperty name="titleProvider" property="cqPage" value="${currentPage}"/>                <!-- <2> -->
+
+    <cq:include script="homepage_header.jsp"/>                                                      <!-- <3> -->
+
 </head>
-
-<body>
-
-</body>
+    <cq:include script="homepage_body.jsp"/>                                                        <!-- <4> -->
 </html>
