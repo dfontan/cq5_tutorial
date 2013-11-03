@@ -3,7 +3,6 @@ package smithstone.pages.cq;
 import com.day.cq.wcm.api.Page;
 import org.junit.Test;
 import org.mockito.Mockito;
-import smithstone.pages.PageHeader;
 import smithstone.pages.TitleProvider;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -16,16 +15,18 @@ public class CQPageTitleTest {
 
     @Test
     public void headerHasTitleFromCQHasTitle() throws Exception {
-        CQPageTitle header = new CQPageTitle();
-        header.setCqPage(fakePage(FAKE_PAGE_TITLE));
-        assertThat(header.getTitle(), equalTo(FAKE_PAGE_TITLE));
+        assertTitle(FAKE_PAGE_TITLE, FAKE_PAGE_TITLE);
     }
 
     @Test
     public void headerHasDefaultTitleWhenCQPageHasNoTitle() throws Exception {
+        assertTitle(NO_TITLE, TitleProvider.DEFAULT_TITLE);
+    }
+
+    private void assertTitle(String actual, String expected) {
         CQPageTitle header = new CQPageTitle();
-        header.setCqPage(fakePage(NO_TITLE));
-        assertThat(header.getTitle(), equalTo(TitleProvider.DEFAULT_TITLE));
+        header.setCqPage(fakePage(actual));
+        assertThat(header.getTitle(), equalTo(expected));
     }
 
     @Test
