@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>cq_deployment_war</module>
+        <module>global</module>
         <module>global-cq-content</module>
         <module>cq5-test-unit</module>
     </modules>
