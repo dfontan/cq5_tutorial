@@ -3,3 +3,6 @@
 
 target
 
+sling-home
+**/WEB-INF
+cq_deployment_war/**/META-INF
