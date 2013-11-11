@@ -16,12 +16,12 @@
 
 
 <head>
-    <script type="text/javascript" src="/etc/designs/smithstone/javascript/main.js"></script>
-    <title><%= currentPage.getTitle() == null ? "No Title" : currentPage.getTitle() %></title> <!-- <1> -->
+    <script type="text/javascript" src="/etc/designs/smithstone/javascript/main.js"></script> <!-- <1> -->
+    <title><%= currentPage.getTitle() == null ? "No Title" : currentPage.getTitle() %></title>
     <cq:include script="/libs/wcm/core/components/init/init.jsp" />
 </head>
 
-<body onload="SS.onLoad()">
+<body onload="SS.onLoad()"> <!-- <2> -->
 
 </body>
 </html>
