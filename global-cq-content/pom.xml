@@ -17,13 +17,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>jstl</groupId>                                 <!-- <1> -->
+            <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>com.day.cq.wcm</groupId>                       <!-- <2> -->
+            <groupId>com.day.cq.wcm</groupId>
             <artifactId>cq-wcm-taglib</artifactId>
             <version>5.5.0</version>
             <scope>runtime</scope>
@@ -45,6 +45,18 @@
             <artifactId>global-web</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.day.cq</groupId><!-- <1> -->
+            <artifactId>cq-mailer</artifactId>
+            <version>5.5.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.commons.osgi.wrapper</groupId><!-- <2> -->
+            <artifactId>com.day.commons.osgi.wrapper.commons-email</artifactId>
+            <version>1.2.0-0002</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -55,7 +67,7 @@
         </resources>
         <plugins>
             <plugin>
-                <groupId>org.apache.sling</groupId>                 <!-- <3> -->
+                <groupId>org.apache.sling</groupId>
                 <artifactId>maven-sling-plugin</artifactId>
                 <version>2.0.6</version>
                 <configuration>
@@ -63,13 +75,13 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>com.cognifide.maven.plugins</groupId>      <!-- <4> -->
+                <groupId>com.cognifide.maven.plugins</groupId>
                 <artifactId>maven-crx-plugin</artifactId>
                 <version>1.0.3</version>
                 <configuration>
-                    <url>http://localhost:4502</url>                <!-- <5> -->
-                    <user>admin</user>                              <!-- <6> -->
-                    <password>admin</password>                      <!-- <7> -->
+                    <url>http://localhost:4502</url>
+                    <user>admin</user>
+                    <password>admin</password>
                     <packageFileName>target/${project.build.finalName}.jar</packageFileName>
                 </configuration>
             </plugin>
@@ -80,7 +92,7 @@
         <profile>
             <id>local</id>
             <properties>
-                <sling.username>admin</sling.username>          <!-- <8> -->
+                <sling.username>admin</sling.username>
                 <sling.password>admin</sling.password>
                 <sling.url>http://localhost:4502/system/console/bundles</sling.url>
             </properties>
@@ -105,7 +117,7 @@
 
             <repositories>
                 <repository>
-                    <id>adobe-public</id>                       <!-- <9> -->
+                    <id>adobe-public</id>
                     <url>http://repo.adobe.com/nexus/content/groups/public</url>
                     <releases>
                         <enabled>true</enabled>
