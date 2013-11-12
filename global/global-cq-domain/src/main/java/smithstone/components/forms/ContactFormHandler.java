@@ -30,7 +30,7 @@ public class ContactFormHandler {
 
         email.setFrom(request.getParameter("email"));
 
-        email.setMsg(builder.toString()); // <3>
+        email.setMsg(builder.toString()); 
         email.addTo("stephen@smithstone.co.uk");
         return email;
     }
