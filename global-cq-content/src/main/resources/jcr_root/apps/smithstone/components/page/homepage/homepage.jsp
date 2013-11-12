@@ -16,7 +16,7 @@
 
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/etc/designs/smithstone/style/main.css"/> <!-- <1> -->
+    <link rel="stylesheet" type="text/css" href="/etc/designs/smithstone/style/main.css"/> 
     <script type="text/javascript" src="/etc/designs/smithstone/javascript/main.js"></script>
     <title><%= currentPage.getTitle() == null ? "No Title" : currentPage.getTitle() %></title>
     <cq:include script="/libs/wcm/core/components/init/init.jsp" />
@@ -24,5 +24,6 @@
 
 <body onload="">
 
+    <cq:include path="body" resourceType="foundation/components/parsys"/> <!-- <1> -->
 </body>
 </html>
