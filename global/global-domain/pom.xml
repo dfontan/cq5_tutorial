@@ -10,6 +10,15 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.framework</artifactId>
+            <version>3.2.2</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <artifactId>global-domain</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
@@ -21,9 +30,14 @@
                 <version>2.3.7</version>
                 <extensions>true</extensions>
                 <configuration>
-
+                    <instructions>
+                        <Bundle-Activator>smithstone.osgi.ext.DateTimeServiceActivator</Bundle-Activator>
+                        <Export-Service>smithstone.services.DateTime</Export-Service>
+                        <Export-Package>smithstone.services.*</Export-Package>
+                    </instructions>
                 </configuration>
             </plugin>
         </plugins>
+
     </build>
 </project>
