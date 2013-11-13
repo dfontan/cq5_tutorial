@@ -26,7 +26,7 @@
 <body onload="">
 
     <p>
-        Current Date Time Is :    <%= ((DateTime)sling.getService(DateTime.class)).getFormattedDateTime()%>
+        Current Date Time Is : <%= new smithstone.cq.domain.DateTime(sling).getDateTime()%>
 
     </p>
 
