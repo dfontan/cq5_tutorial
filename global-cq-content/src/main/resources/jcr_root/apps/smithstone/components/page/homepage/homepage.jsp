@@ -6,6 +6,7 @@
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@include file="/libs/foundation/global.jsp"%>
 <cq:defineObjects/>
+<%@ taglib prefix="smithstone" tagdir="/WEB-INF/tags/apps/smithstone/components/tags" %>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7" lang=""> <![endif]-->
@@ -25,11 +26,9 @@
 
 <body onload="">
 
-    <p>
-        Current Date Time Is : <%= new smithstone.cq.domain.DateTime(sling).getDateTime()%>
 
-    </p>
+<smithstone:datetime/>
 
-    <cq:include path="body" resourceType="foundation/components/parsys"/> <!-- <1> -->
+<cq:include path="body" resourceType="foundation/components/parsys"/> <!-- <1> -->
 </body>
 </html>

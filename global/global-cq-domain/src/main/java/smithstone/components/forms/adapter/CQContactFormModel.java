@@ -7,6 +7,9 @@ public class CQContactFormModel implements ContactModel {
 
     private Resource resource;
 
+    public CQContactFormModel() {
+    }
+
     public void setResource(Resource resource) {
         this.resource = resource;
     }

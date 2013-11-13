@@ -11,7 +11,7 @@ public class DateTime {
         service = scriptHelper.getService(smithstone.services.DateTime.class);
     }
 
-    public String getDateTime(){
+    public String getDateTime() {
         return service.getFormattedDateTime();
     }
 }

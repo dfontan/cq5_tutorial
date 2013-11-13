@@ -8,6 +8,15 @@ public class ContactForm {
     private ContactView view;
     private ContactModel model;
 
+    public ContactForm() {
+    }
+
+
+    public ContactForm(ContactView view, ContactModel model) {
+        this.view = view;
+        this.model = model;
+    }
+
     public ContactView getView() {
         return view;
     }
