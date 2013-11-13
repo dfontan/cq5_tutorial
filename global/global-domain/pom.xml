@@ -33,7 +33,7 @@
                     <instructions>
                         <Bundle-Activator>smithstone.osgi.ext.DateTimeServiceActivator</Bundle-Activator>
                         <Export-Service>smithstone.services.DateTime</Export-Service>
-                        <Export-Package>smithstone.services.*</Export-Package>
+                        <Export-Package>smithstone.services.*, smithstone.forms.*</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
