@@ -12,7 +12,7 @@ public class ContactFormTest {
 
     public static final String base = "http://localhost:9999/global-views/fixtures";
     public static final String url = base + "/components/forms/contact_form/form_test.jsp";
-    
+
 
     @Test
     public void pageRendersCorrectly() throws Exception {

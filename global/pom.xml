@@ -12,6 +12,8 @@
 
     <modules>
         <module>global-domain</module>
+        <module>global-web-factories</module>
+        <module>global-cq-web-factories</module>
         <module>global-cq-domain</module>
         <module>global-web</module>
         <module>global-cq-web</module>

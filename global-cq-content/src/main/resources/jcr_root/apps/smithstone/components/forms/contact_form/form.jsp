@@ -1,4 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+
+<%@taglib prefix="smithstone" uri="http://www.smithstone.com/global-factory-tags" %>
+
+<smithstone:contactFormFactory/>
+
 <jsp:useBean id="form" type="smithstone.forms.ContactForm" scope="request"/>
 
 
