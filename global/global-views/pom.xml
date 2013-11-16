@@ -120,12 +120,14 @@
                         <resource>
                             <directory>${pom.basedir}/../../global-cq-content/src/main/resources/jcr_root</directory>
                         </resource>
+<!--
                         <resource>
                             <directory>
                                 ${pom.basedir}/../../global-cq-content/src/main/resources/jcr_root/apps/ssmithstone/components/tags
                             </directory>
-                            <targetPath>WEB-INF/tags/apps/vaa/components/tags</targetPath>
+                            <targetPath>WEB-INF/tags/apps/smithstone/components/tags</targetPath>
                         </resource>
+-->
                     </webResources>
                 </configuration>
             </plugin>
@@ -145,7 +147,7 @@
                             </resourcesAsCSV>
                         </baseResource>
                         <contextPath>
-                            /global-cq-view-tests
+                            /global-views
                         </contextPath>
                     </webAppConfig>
                     <connectors>
