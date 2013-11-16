@@ -14,7 +14,7 @@
         <module>global-domain</module>
         <module>global-cq-domain</module>
         <module>global-web</module>
-        <!--<module>global-views</module>-->
+        <module>global-cq-web</module>
     </modules>
 
 </project>
