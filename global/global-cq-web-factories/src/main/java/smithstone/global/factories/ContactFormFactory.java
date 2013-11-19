@@ -12,14 +12,10 @@ import javax.servlet.jsp.JspContext;
 public class ContactFormFactory {
 
     public static ContactView view(JspContext context){
-        CQContactFormView view = new CQContactFormView();
-        view.setProperties((ValueMap) context.findAttribute("properties"));
-        return view;
+        return new CQContactFormView((ValueMap) context.findAttribute("properties"));
     }
 
     public static ContactModel model(JspContext context){
-        CQContactFormModel model = new CQContactFormModel();
-        model.setResource((Resource) context.findAttribute("resource"));
-        return model;
+        return new CQContactFormModel((Resource) context.findAttribute("resource"));
     }
 }

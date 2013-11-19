@@ -10,6 +10,11 @@ public class CQContactFormView implements ContactView {
     public CQContactFormView() {
     }
 
+    public CQContactFormView(ValueMap properties) {
+
+        this.properties = properties;
+    }
+
     public void setProperties(ValueMap properties) {
         this.properties = properties;
     }

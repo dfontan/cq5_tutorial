@@ -10,6 +10,11 @@ public class CQContactFormModel implements ContactModel {
     public CQContactFormModel() {
     }
 
+    public CQContactFormModel(Resource resource) {
+
+        this.resource = resource;
+    }
+
     public void setResource(Resource resource) {
         this.resource = resource;
     }

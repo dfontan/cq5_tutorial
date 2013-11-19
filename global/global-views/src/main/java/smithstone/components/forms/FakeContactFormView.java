@@ -5,36 +5,36 @@ import smithstone.forms.ports.ContactView;
 public class FakeContactFormView implements ContactView {
     @Override
     public String getTitleLabel() {
-        return "-title-";
+        return "Title";
     }
 
     @Override
     public String getFirstNameLabel() {
-        return "-";
+        return "First Name";
     }
 
     @Override
     public String getLastNameLabel() {
-        return "-";
+        return "Last Name";
     }
 
     @Override
     public String getEmailAddressLabel() {
-        return "-";
+        return "Email Address";
     }
 
     @Override
     public String getTelephoneLabel() {
-        return "-";
+        return "Telephone";
     }
 
     @Override
     public String getMobileLabel() {
-        return "-";
+        return "Mobile";
     }
 
     @Override
     public String getSubmitButtonLabel() {
-        return "-";
+        return "Submit";
     }
 }
